@@ -14,7 +14,7 @@ public abstract class AntiCheatConfiguration extends ConfigProvider {
      */
     public abstract boolean kickPlayer();
 
-    public abstract boolean setKickPlayer(boolean flag);
+    public abstract void setKickPlayer(boolean flag);
 
     /**
      * @return Detects blink or not
