@@ -1,15 +1,20 @@
 package xyz.acrylicstyle.anticheat.api;
 
-import org.bukkit.configuration.InvalidConfigurationException;
-import xyz.acrylicstyle.tomeito_core.providers.ConfigProvider;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import xyz.acrylicstyle.tomeito_api.providers.ConfigProvider;
 
 public abstract class AntiCheatConfiguration extends ConfigProvider {
-    public AntiCheatConfiguration(String path) throws IOException, InvalidConfigurationException {
+    public AntiCheatConfiguration(String path) {
         super(path);
     }
+
+    /**
+     * Detects and automatically kicks player?<br />
+     * Disabling this option will disable the player kick.
+     * @return does detects and kicks player or not
+     */
+    public abstract boolean kickPlayer();
+
+    public abstract boolean setKickPlayer(boolean flag);
 
     /**
      * @return Detects blink or not
