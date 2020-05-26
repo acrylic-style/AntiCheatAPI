@@ -6,7 +6,7 @@
 
     <groupId>xyz.acrylicstyle</groupId>
     <artifactId>AntiCheatAPI</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <build>
         <plugins>
             <plugin>
@@ -54,11 +54,6 @@
             <artifactId>annotations</artifactId>
             <version>18.0.0</version>
             <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>xyz.acrylicstyle</groupId>
-            <artifactId>NMSAPI-1.8.8</artifactId>
-            <version>0.1.44</version>
         </dependency>
     </dependencies>
 </project>

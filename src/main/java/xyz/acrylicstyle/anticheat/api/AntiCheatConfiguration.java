@@ -1,11 +1,19 @@
 package xyz.acrylicstyle.anticheat.api;
 
+import util.CollectionList;
 import xyz.acrylicstyle.tomeito_api.providers.ConfigProvider;
+
+import java.util.List;
+import java.util.UUID;
 
 public abstract class AntiCheatConfiguration extends ConfigProvider {
     public AntiCheatConfiguration(String path) {
         super(path);
     }
+
+    public abstract CollectionList<UUID> getBypassList();
+
+    public abstract void setBypassList(List<UUID> list);
 
     /**
      * Detects and automatically kicks player?<br />
