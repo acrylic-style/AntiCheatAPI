@@ -15,6 +15,10 @@ public abstract class AntiCheatConfiguration extends ConfigProvider {
 
     public abstract void setBypassList(List<UUID> list);
 
+    public abstract void addBypassList(UUID uuid);
+
+    public abstract void removeBypassList(UUID uuid);
+
     /**
      * Detects and automatically kicks player?<br />
      * Disabling this option will disable the player kick.
