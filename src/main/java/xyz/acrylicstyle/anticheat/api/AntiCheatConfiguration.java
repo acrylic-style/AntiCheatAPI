@@ -85,4 +85,8 @@ public abstract class AntiCheatConfiguration extends ConfigProvider {
     public abstract void setClicksThreshold(int i);
 
     public abstract void setSpeedThreshold(int i);
+
+    public abstract void setDisableMovementCheck(boolean flag);
+
+    public abstract boolean isDisableMovementCheck();
 }

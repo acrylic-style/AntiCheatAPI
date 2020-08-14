@@ -24,7 +24,7 @@ public interface AntiCheat {
     /**
      * @return Returns version.yml
      */
-    @Nullable
+    @NotNull
     ConfigProvider getVersionInfo();
 
     /**
