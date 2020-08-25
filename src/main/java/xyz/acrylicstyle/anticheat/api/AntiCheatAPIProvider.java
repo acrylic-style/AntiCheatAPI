@@ -6,8 +6,12 @@ import util.reflect.Ref;
 public final class AntiCheatAPIProvider {
     private AntiCheatAPIProvider() {}
 
+    /**
+     * @deprecated Use {@link AntiCheat#getInstance()} instead
+     */
     @Nullable
+    @Deprecated
     public static AntiCheat getInstance() {
-        return (AntiCheat) Ref.forName("xyz.acrylicstyle.anticheat.AntiCheatPlugin").getMethod("getInstance").invoke(null);
+        return AntiCheat.getInstance();
     }
 }

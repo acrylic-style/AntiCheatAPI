@@ -78,6 +78,10 @@ public abstract class AntiCheatConfiguration extends ConfigProvider {
      */
     public abstract int getSpeedThreshold();
 
+    public abstract int getBlockBreaksThreshold();
+
+    public abstract void setBlockBreaksThreshold(int i);
+
     public abstract void setBlinkPacketsThreshold(int i);
 
     public abstract void setFlyVerticalThreshold(int i);
