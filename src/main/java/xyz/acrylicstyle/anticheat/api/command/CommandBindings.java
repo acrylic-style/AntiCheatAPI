@@ -26,7 +26,7 @@ public class CommandBindings {
 
     @NotNull
     public StringCollection<CommandExecutor> filterKeys(@NotNull Function<String, Boolean> function) {
-        return commands.filterKeys(function);
+        return (StringCollection<CommandExecutor>) commands.filterKeys(function);
     }
 
     @NotNull
